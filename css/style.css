@@ -929,6 +929,8 @@ footer {
   padding: 27px 0 30.8px 0;
   position: relative;
   margin-top: 152.9px;
+  box-shadow: 0 0 0 100vmax #333333;
+  clip-path: inset(0 -100vmax);
 }
 
 footer>div {
@@ -937,28 +939,6 @@ footer>div {
   text-align: right;
   margin-right: 46px;
   z-index: 3;
-}
-
-footer::after {
-  content: "";
-  background-color: #333333;
-  z-index: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  transform: translateX(99%);
-}
-
-footer::before {
-  content: "";
-  background-color: #333333;
-  z-index: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  transform: translateX(-99%);
 }
 
 /* RESPONSIVE LAYOUT */
